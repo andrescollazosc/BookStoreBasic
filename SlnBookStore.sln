@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Design", "0.Design", "{C3200E16-503D-459C-B6A1-90137917B11A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Services", "1.Services", "{FB76A55F-8039-4BA2-876F-143BE837FFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infrastructure", "2.Infrastructure", "{4370C422-3327-4949-A202-41EE11683B4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{85CC3B50-264F-4796-9B73-45E427006504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlnBookStore.Infrastructure.DataAccess", "SlnBookStore.Infrastructure.DataAccess\SlnBookStore.Infrastructure.DataAccess.csproj", "{D457D4B7-6E2E-4A27-90BC-EB77AC0C7F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlnBookStore.Services.WebApi", "SlnBookStore.Services.WebApi\SlnBookStore.Services.WebApi.csproj", "{4D434F2F-BFCE-40E8-AACA-2518BE7AE8AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D457D4B7-6E2E-4A27-90BC-EB77AC0C7F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D457D4B7-6E2E-4A27-90BC-EB77AC0C7F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D457D4B7-6E2E-4A27-90BC-EB77AC0C7F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D457D4B7-6E2E-4A27-90BC-EB77AC0C7F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D434F2F-BFCE-40E8-AACA-2518BE7AE8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D434F2F-BFCE-40E8-AACA-2518BE7AE8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D434F2F-BFCE-40E8-AACA-2518BE7AE8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D434F2F-BFCE-40E8-AACA-2518BE7AE8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85CC3B50-264F-4796-9B73-45E427006504} = {C3200E16-503D-459C-B6A1-90137917B11A}
+		{D457D4B7-6E2E-4A27-90BC-EB77AC0C7F82} = {4370C422-3327-4949-A202-41EE11683B4C}
+		{4D434F2F-BFCE-40E8-AACA-2518BE7AE8AD} = {FB76A55F-8039-4BA2-876F-143BE837FFDD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71B56341-1784-49AF-A435-020DE920468C}
+	EndGlobalSection
+EndGlobal

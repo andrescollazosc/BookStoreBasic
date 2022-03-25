@@ -1,0 +1,14 @@
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.deps.json
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.runtimeconfig.json
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.dll
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\ref\SlnBookStore.Infrastructure.DataAccess.dll
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.pdb
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.csproj.AssemblyReference.cache
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.AssemblyInfoInputs.cache
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.AssemblyInfo.cs
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.dll
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\ref\SlnBookStore.Infrastructure.DataAccess.dll
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.pdb
+C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.genruntimeconfig.cache

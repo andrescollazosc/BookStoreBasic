@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CUlEcXMIt+F+7SnC6N7r1GAdz6ik1UbaOO2Pv9v8uFA=",
+  "Source": "SlnBookStore.Services.WebApi",
+  "BasePath": "_content/SlnBookStore.Services.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
