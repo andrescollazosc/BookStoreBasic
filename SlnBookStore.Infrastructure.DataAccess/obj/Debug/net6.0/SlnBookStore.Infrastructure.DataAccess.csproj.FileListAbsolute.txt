@@ -12,3 +12,17 @@ C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAcc
 C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\ref\SlnBookStore.Infrastructure.DataAccess.dll
 C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.pdb
 C:\Users\acollazos\source\repos\SlnBookStore\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.genruntimeconfig.cache
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.deps.json
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.runtimeconfig.json
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.dll
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\bin\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.pdb
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.csproj.AssemblyReference.cache
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.AssemblyInfoInputs.cache
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.AssemblyInfo.cs
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.csproj.CoreCompileInputs.cache
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.dll
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\refint\SlnBookStore.Infrastructure.DataAccess.dll
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.pdb
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\SlnBookStore.Infrastructure.DataAccess.genruntimeconfig.cache
+C:\repos\BookStoreBasic\SlnBookStore.Infrastructure.DataAccess\obj\Debug\net6.0\ref\SlnBookStore.Infrastructure.DataAccess.dll

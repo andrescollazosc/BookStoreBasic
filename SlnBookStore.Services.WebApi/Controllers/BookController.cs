@@ -19,9 +19,17 @@ namespace SlnBookStore.Services.WebApi.Controllers
 
         [HttpGet("books")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<IEnumerable<Book>> GetAll()
+        public ActionResult<IEnumerable<BookReadDto>> GetAll()
         {
-            var result = _bookRepository.GetAll();
+            var result = _bookRepository.GetAll().Select(x => Mapper.Map(x)).ToList();
+
+            return Ok(result);
+        }
+
+        [HttpGet("bookById/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult<BookReadDto> GetById(string id) {
+            var result = Mapper.Map(_bookRepository.GetBookById(id));
 
             return Ok(result);
         }
@@ -44,5 +52,39 @@ namespace SlnBookStore.Services.WebApi.Controllers
             }
         }
 
+        [HttpPut("update")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<BookReadDto> Update(BookUpdateDto bookUpdateDto) {
+
+            Book bookToModify = Mapper.Map(bookUpdateDto);
+                
+            var result = _bookRepository.Update(bookToModify);
+
+            if (result)
+            {
+                return Mapper.Map(_bookRepository.GetBookById(bookUpdateDto.Id));
+            }
+
+            return BadRequest(new BookReadDto());
+
+        }
+
+        [HttpPut("delete/{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<BookReadDto> Delete(string id)
+        {
+
+            var result = _bookRepository.Delete(id);
+
+            if (result)
+            {
+                return NoContent();
+            }
+
+            return BadRequest(new BookReadDto());
+
+        }
     }
 }
