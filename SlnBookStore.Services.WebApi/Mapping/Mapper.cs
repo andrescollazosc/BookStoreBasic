@@ -17,6 +17,9 @@ namespace SlnBookStore.Services.WebApi.Mapping
 
         public static Book Map(BookUpdateDto bookUpdateDto)
         {
+            if (bookUpdateDto is null)
+                return new Book();
+
             return new Book
             {
                 Author = bookUpdateDto.Author,
@@ -30,6 +33,9 @@ namespace SlnBookStore.Services.WebApi.Mapping
 
         public static BookReadDto Map(Book book)
         {
+            if (book is null)
+                return new BookReadDto();
+
             return new BookReadDto { 
                 Author = book.Author,
                 CategoryId=book.CategoryId,
@@ -39,6 +45,37 @@ namespace SlnBookStore.Services.WebApi.Mapping
             };
         }
 
+        public static CategoryDto Map(Category category)
+        {
+            return new CategoryDto
+            {
+                Id = category.Id,
+                Description = category.Description,
+            };
+        }
+
+        public static Category Map(CategoryDto categoryDto)
+        {
+            if (categoryDto is null)
+                return new Category();
+
+            return new Category
+            {
+                Id = categoryDto.Id,
+                Description = categoryDto.Description,
+            };
+        }
+
+        public static Category Map(CategoryCreateDto categoryCreateDto)
+        {
+            if (categoryCreateDto is null)
+                return new Category();
+
+            return new Category
+            {
+                Description = categoryCreateDto.Description,
+            };
+        }
 
     }
 }

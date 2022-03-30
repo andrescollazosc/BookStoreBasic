@@ -19,19 +19,39 @@ namespace SlnBookStore.Services.WebApi.Controllers
 
         [HttpGet("books")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<IEnumerable<BookReadDto>> GetAll()
         {
-            var result = _bookRepository.GetAll().Select(x => Mapper.Map(x)).ToList();
+            try
+            {
+                var result = _bookRepository.GetAll().Select(x => Mapper.Map(x)).ToList();
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("bookById/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<BookReadDto> GetById(string id) {
-            var result = Mapper.Map(_bookRepository.GetBookById(id));
+            try
+            {
+                var result = Mapper.Map(_bookRepository.GetBookById(id));
 
-            return Ok(result);
+                if (result is null)
+                    return NotFound();
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPost("create")]
@@ -57,33 +77,37 @@ namespace SlnBookStore.Services.WebApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<BookReadDto> Update(BookUpdateDto bookUpdateDto) {
 
-            Book bookToModify = Mapper.Map(bookUpdateDto);
-                
-            var result = _bookRepository.Update(bookToModify);
-
-            if (result)
+            try
             {
-                return Mapper.Map(_bookRepository.GetBookById(bookUpdateDto.Id));
-            }
+                Book bookToModify = Mapper.Map(bookUpdateDto);
 
-            return BadRequest(new BookReadDto());
+                var result = _bookRepository.Update(bookToModify);
+
+                if (result)
+                {
+                    return Mapper.Map(_bookRepository.GetBookById(bookUpdateDto.Id));
+                }
+
+                return BadRequest(new BookReadDto());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
 
         }
 
         [HttpPut("delete/{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<BookReadDto> Delete(string id)
+        public ActionResult Delete(string id)
         {
-
             var result = _bookRepository.Delete(id);
 
             if (result)
-            {
                 return NoContent();
-            }
 
-            return BadRequest(new BookReadDto());
+            return BadRequest();
 
         }
     }
