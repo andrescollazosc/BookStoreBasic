@@ -42,6 +42,15 @@ namespace SlnBookStore.Infrastructure.DataAccess.Repositories
             return _context.SaveChanges() > 0 ? true : false;
         }
 
+        public bool Delete(string id)
+        {
+            var categoryEntity = GetCategoryById(id);
+
+            _context.Remove(categoryEntity);
+
+            return _context.SaveChanges() > 0 ? true : false;
+        }
+
 
     }
 }
